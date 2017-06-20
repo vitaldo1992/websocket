@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Websocket</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="connections"></div>
+    </div>
+    <div class="content">
+      <div class="chat-wrapper">
+        Chat
+        <div class="chat"></div>
+      </div>
+      <div class="input">
+        <form id="messageForm">
+          <textarea id="message"></textarea>
+          <button>SEND</button>
+        </form>
+      </div>
+    </div>
+    <div class="user-form">
+      <form id="userForm">
+        <input type="text" id="userName">
+        <button>Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
